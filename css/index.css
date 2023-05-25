@@ -66,28 +66,26 @@ img {
     color: #2196F3;
 }
 
-.link-passive1 {
+.head-right-list {
+    display: flex;
+    cursor: pointer;
+}
+.head-right-list a{
+    text-decoration: none;
     color: #757575;
     font-size: 14px;
-    text-decoration: none;
-    padding-top: 32px;
-    padding-bottom: 32px;
+}
+.head-right-list svg {
+    fill: #757575;
 }
 
-.link-passive1:hover {
-    color: #2196F3 ;
+.head-right-list :hover{
+    color: #2196F3;
+    fill: #2196F3;
 }
-.link-passive2 {
-    color: #757575;
-    font-size: 14px;
-    text-decoration: none;
-    padding-top: 32px;
-    padding-bottom: 32px;
-      
-}
-.link-passive2:hover {
-    color: #2196F3 ;
-}
+
+
+
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -106,12 +104,12 @@ body {
     font-size: 16px;
     line-height: 1.14;
     text-decoration: none;
-    background: #2F303A;
+    background: url("/goit-markup-hw-04/images/background.jpg");
     color: #FFFFFF;
     padding-top: 200px;
     padding-bottom: 30px;
     max-width: 1600px;
-    
+        
 }
 
 .hero h1 {
@@ -159,7 +157,8 @@ button {
     background-color: #fff;
     border-radius: 4px;
     max-width: fit-content;
-    align-items: stretch
+    align-items: stretch;
+    padding-inline: 10px;
 }
 
 
@@ -180,6 +179,19 @@ button {
     color: #757575;
     
 
+}
+
+.text-icon {
+    padding-bottom: 25px;
+    padding-top: 25px;
+    margin-bottom: 30px;
+    background-color: #F5F4FA;
+}
+
+.icon-item {
+    fill: #212121;
+    fill-opacity: 1;
+    display: flex;
 }
 
 
@@ -251,7 +263,8 @@ h2 {
     max-width: fit-content;
     margin: auto;
     align-items: stretch;
-    padding: 0px;    padding-bottom: 94px;
+    padding: 0px;    
+    padding-bottom: 94px;
 }
 
 
@@ -261,10 +274,9 @@ h2 {
     line-height: 19px;
     color: #212121;
     text-align: center;
-    padding: 30px 99px 10px 99px;
-    
-        
+    padding: 30px 99px 10px 99px;      
 }
+
 
 .staff-item p {
     font-weight: 400;
@@ -276,6 +288,34 @@ h2 {
     padding: 10px 70px 30px 70px;
 }
 
+
+.client-head {
+    justify-content: center;
+    display: flex;
+    font-size: 36px;
+    font-weight: 700;
+    padding-bottom: 50px;
+}
+
+.client-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    cursor: pointer;
+      
+}
+
+.client-icon-item {
+    border: 1px solid #AFB1B8;
+    flex-basis: calc((100% - 10px) / 6);
+    fill: #AFB1B8;
+    cursor: pointer;
+}
+
+.client-icon-list :hover {
+    fill: #2196F3;
+    border: 1px solid #2196F3;
+}
 
 footer {
     background: #2F303A;
@@ -330,6 +370,21 @@ footer {
     color: #2196F3 ;
 }
 
+.bottom-icons{
+    display: flex;
+}
+
+.icon-bottom-item {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #757575;
+}
+.item-icon {
+    fill: #FFFFFF;
+    margin: auto;
+}
 
 li {
     display: inline;
